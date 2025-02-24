@@ -212,7 +212,7 @@ function initNavigation() {
   document.getElementById('about').style.display = 'none';
 
   document.querySelector('.nav-links').addEventListener('click', e => {
-    if (e.target.tagName === 'A' && e.target.hasAttribute('href')) {
+    if (e.target.tagName === 'A' && e.target.hasAttribute('href') && !e.target.getAttribute('href').startsWith('h')) {
       e.preventDefault();
       const targetId = e.target.getAttribute('href').substring(1);
       const targetElement = document.getElementById(targetId);
