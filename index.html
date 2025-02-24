@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">MyBlog</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="https://www.github.com/suffaro" target="_blank" rel="noopener noreferrer">My Repo</a>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="home">
+    </div>
+    <div id="about" class="about-section" style="display: none;">
+      <h2>About Me</h2>
+      <div>
+        I write about computer science, AI, physics, math, economics, and video games.<br>
+        Enjoy exploring my posts.
+      </div>
+    </div>
+  </main>
+  <footer>
+    <a href="https://x.com/deny_iso" target="_blank" rel="noopener noreferrer" class="social-link">
+      <img src="svg/x-icon.svg" alt="X">
+      <span class="tooltip">Visit X Profile</span>
+    </a>
+    <a href="#" class="social-link" data-clipboard="piogenesis_">
+      <img src="svg/discord-icon.svg" alt="Discord">
+      <span class="tooltip">Click to copy Discord ID</span>
+    </a>
+    <a href="#" class="social-link" data-clipboard="deny.me.iso@gmail.com">
+      <img src="svg/mail-icon.svg" alt="Email">
+      <span class="tooltip">Click to copy email</span>
+    </a>
+  </footer>
+  <div class="copy-feedback">Copied to clipboard!</div>
+  <script src="script.js" type="module" defer></script>
+</body>
+
+</html>
